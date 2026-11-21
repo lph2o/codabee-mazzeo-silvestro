@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Studio Odontoiatrico Mazzeo & Silvestro | Chiaia, Napoli</title>
+  
+  <!-- Polices Google : Playfair Display (Serif médical noble) & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
+  <style>
+    :root {
+      --color-navy: #0B192C;
+      --color-slate-dark: #1E2E42;
+      --color-cyan-accent: #0284C7;
+      --color-cyan-light: #E0F2FE;
+      --color-opaline: #F8FAFC;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--color-opaline);
+      color: #0F172A;
+    }
+    h1, h2, h3, .font-serif-title {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    .hero-clinic {
+      background-image: linear-gradient(135deg, rgba(11, 25, 44, 0.88) 0%, rgba(15, 23, 42, 0.72) 60%, rgba(11, 25, 44, 0.92) 100%), url('assets/clinic-hero.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .badge-glass {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-sky-900 selection:text-sky-100 pb-20 sm:pb-0">
+
+  <!-- Bandeau Démo Codafree -->
+  <aside aria-label="Bandeau démonstration" class="bg-slate-950 text-slate-300 px-4 py-2 text-xs flex justify-between items-center border-b border-slate-800">
+    <div class="flex items-center gap-2">
+      <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-sky-950 text-sky-300 border border-sky-800/80">Proposta Demo</span>
+      <span class="hidden sm:inline text-slate-400">Dimostrazione interattiva realizzata per lo <strong>Studio Odontoiatrico Mazzeo &amp; Silvestro</strong> (Napoli Chiaia)</span>
+    </div>
+    <div class="flex items-center gap-3">
+      <span class="text-slate-400 text-[11px]">Realizzata da <strong>Codafree</strong></span>
+    </div>
+  </aside>
+
+  <!-- En-tête Top Bar (Téléphone & Adresse rapide) -->
+  <header class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800 hidden md:block">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-6">
+        <div class="flex items-center gap-2">
+          <!-- SVG Location Pin -->
+          <svg class="w-3.5 h-3.5 text-sky-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+          <span>Riviera di Chiaia, 118 – 80122 Napoli (NA)</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <!-- SVG Clock -->
+          <svg class="w-3.5 h-3.5 text-sky-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          <span>Lun – Ven: 08:30 – 19:30 | Sabato solo urgenze</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:+390817648921" class="hover:text-white flex items-center gap-1.5 transition-colors font-medium">
+          <!-- SVG Phone -->
+          <svg class="w-3.5 h-3.5 text-sky-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+          </svg>
+          <span>Segreteria: 081 764 8921</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Principale -->
+  <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex justify-between items-center">
+      <!-- Logo et Identité -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-slate-900 flex items-center justify-center text-sky-400 shadow-md group-hover:bg-sky-950 transition-colors">
+          <!-- SVG Tooth / Caduceus Minimalist -->
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2C8.5 2 6 4.5 6 7.5C6 9.5 7 11 7.5 12.5C8 14 8 16 7.5 18C7 20 8.5 22 10 22C11.5 22 11.8 19 12 17C12.2 19 12.5 22 14 22C15.5 22 17 20 16.5 18C16 16 16 14 16.5 12.5C17 11 18 9.5 18 7.5C18 4.5 15.5 2 12 2Z"/>
+            <path d="M9 7C9.5 6.5 10.5 6 12 6C13.5 6 14.5 6.5 15 7"/>
+          </svg>
+        </div>
+        <div>
+          <span class="block font-serif-title font-bold text-lg sm:text-xl text-slate-900 tracking-tight leading-none">Mazzeo &amp; Silvestro</span>
+          <span class="block text-[11px] tracking-wider uppercase font-semibold text-slate-500 mt-1">Studio Odontoiatrico • Chiaia</span>
+        </div>
+      </a>
+
+      <!-- Menu Liens Desktop -->
+      <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-700">
+        <a href="#cure" class="hover:text-sky-700 transition-colors">Aree di Cura</a>
+        <a href="#tecnologia" class="hover:text-sky-700 transition-colors">Tecnologia 3D</a>
+        <a href="#studio" class="hover:text-sky-700 transition-colors">Lo Studio</a>
+        <a href="#recensioni" class="hover:text-sky-700 transition-colors">Pazienti</a>
+        <a href="#urgenze" class="hover:text-sky-700 transition-colors">Urgenze</a>
+      </div>
+
+      <!-- Actions Rapides Header -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/393498124590?text=Buongiorno%2C%20vorrei%20richiedere%20un%20appuntamento%20o%20informazioni%20presso%20il%20vostro%20Studio%20a%20Chiaia." target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-lg border border-slate-300 text-slate-700 hover:bg-slate-100 text-xs font-semibold transition-colors">
+          <!-- SVG WhatsApp -->
+          <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.087-.179.182-.077.357.101.174.449.741.964 1.2.662.589 1.221.77 1.394.856.173.087.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/>
+          </svg>
+          <span>WhatsApp Studio</span>
+        </a>
+        <a href="#prenota" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-slate-900 text-white hover:bg-sky-900 text-xs font-semibold shadow-xs transition-colors">
+          <!-- SVG Calendar Check -->
+          <svg class="w-4 h-4 text-sky-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          <span>Prenota Visita</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="relative hero-clinic text-white py-20 lg:py-28 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+      <div class="max-w-2xl">
+        <!-- Badge Chiaia & Avis Google -->
+        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full badge-glass text-xs font-medium text-slate-200 mb-6">
+          <div class="flex items-center text-amber-400">
+            <!-- 5 SVG Stars -->
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="font-semibold text-white">4.8 / 5</span>
+          <span class="text-slate-300">• 184 pazienti a Napoli Chiaia</span>
+        </div>
+
+        <!-- Titre Editorial de Redacteur-IT -->
+        <h1 class="font-serif-title text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight mb-5">
+          L’arte del sorriso nel cuore di Chiaia.
+        </h1>
+
+        <!-- Sous-titre -->
+        <p class="text-slate-200 text-base sm:text-lg leading-relaxed mb-8">
+          Implantologia avanzata, estetica dentale e cure delicate con le più moderne tecnologie 3D. Un approccio empatico pensato per eliminare ogni timore.
+        </p>
+
+        <!-- CTA Doubles -->
+        <div class="flex flex-col sm:flex-row gap-3.5 sm:items-center">
+          <a href="#prenota" class="inline-flex justify-center items-center gap-2.5 px-6 py-3.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-sm shadow-lg hover:shadow-sky-500/25 transition-all">
+            <!-- SVG Calendar -->
+            <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+            </svg>
+            <span>Prenota la prima visita</span>
+          </a>
+
+          <a href="#urgenze" class="inline-flex justify-center items-center gap-2.5 px-6 py-3.5 rounded-xl badge-glass hover:bg-white/20 text-white font-semibold text-sm transition-all">
+            <!-- SVG Emergency Lightning / Heartbeat -->
+            <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+            <span>Urgenze &amp; Contatto Rapido</span>
+          </a>
+        </div>
+
+        <!-- Micro Reassurance Grid -->
+        <div class="grid grid-cols-3 gap-3 pt-10 mt-10 border-t border-white/10 text-xs">
+          <div>
+            <div class="font-serif-title text-xl font-bold text-white">0</div>
+            <div class="text-slate-300 font-medium mt-0.5">Dolore &amp; Ansia con Sedazione Cosciente</div>
+          </div>
+          <div>
+            <div class="font-serif-title text-xl font-bold text-white">3D</div>
+            <div class="text-slate-300 font-medium mt-0.5">Scansione Digitale Senza Paste Fastidiose</div>
+          </div>
+          <div>
+            <div class="font-serif-title text-xl font-bold text-white">24h</div>
+            <div class="text-slate-300 font-medium mt-0.5">Gestione Prioritaria Dolore Acuto</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BANDEAU RÉASSURANCE (Plateau Technique & Confort Sans Douleur) -->
+  <section class="bg-white border-b border-slate-200 py-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="bg-sky-50/70 border border-sky-100 rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-center gap-6 justify-between">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-sky-600 text-white flex items-center justify-center shrink-0 shadow-sm">
+            <!-- SVG Shield with Heart / Reassurance -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            </svg>
+          </div>
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-sky-800">Cure Delicate &amp; Protocolli Innovativi</span>
+            <h2 class="font-serif-title text-xl sm:text-2xl font-bold text-slate-900 mt-1">« Dimenticate l'ansia del dentista »</h2>
+            <p class="text-slate-600 text-sm mt-1 leading-relaxed max-w-2xl">
+              Diagnosi digitale ad altissima precisione e sedazione cosciente per trattamenti sereni, controllati e totalmente privi di dolore. La vostra tranquillità è la nostra prima premura.
+            </p>
+          </div>
+        </div>
+        <a href="#prenota" class="shrink-0 px-5 py-2.5 rounded-lg bg-sky-700 hover:bg-sky-800 text-white text-xs font-semibold shadow-xs transition-colors whitespace-nowrap">
+          Richiedi Colloquio Confort
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PÔLES D'EXCELLENCE (Grille de services) -->
+  <section id="cure" class="py-16 sm:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <!-- Titre Section -->
+      <div class="max-w-2xl mx-auto text-center mb-14">
+        <span class="text-xs font-bold tracking-widest uppercase text-sky-700">Specializzazioni Cliniche</span>
+        <h2 class="font-serif-title text-3xl sm:text-4xl font-bold text-slate-900 mt-2">I nostri poli d'eccellenza medica</h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-3">
+          Ogni trattamento nasce dall'incontro tra esperienza ventennale e strumentazione diagnostica di ultima generazione.
+        </p>
+      </div>
+
+      <!-- 3 Pôles Principaux -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Pôle 1 : Implantologie Guidée 3D -->
+        <article class="bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-xs hover:shadow-md transition-shadow flex flex-col">
+          <div class="h-48 overflow-hidden relative">
+            <img src="assets/implantology.jpg" alt="Implantologia guidata 3D e chirurgia computerizzata" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-slate-900/80 backdrop-blur-xs text-white text-[11px] font-medium flex items-center gap-1.5">
+              <!-- SVG Scan -->
+              <svg class="w-3.5 h-3.5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7V4h3m10 0h3v3M4 17v3h3m10 0h3v-3M9 12h6"/>
+              </svg>
+              <span>Alta Precisione</span>
+            </div>
+          </div>
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif-title text-xl font-bold text-slate-900 mb-2">Implantologia Guidata 3D</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                Recupero funzionale ed estetico immediato, con chirurgia mininvasiva pianificata al computer. Tempi di guarigione ridotti e nessun trauma ai tessuti sani.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-700 mb-6">
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-sky-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>Carico immediato (denti fissi in 24-48 ore)</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-sky-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>Biocompatibilità e garanzia clinica certificata</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#prenota" class="inline-flex items-center gap-1.5 text-xs font-bold text-sky-700 hover:text-sky-800 transition-colors pt-4 border-t border-slate-100">
+              <span>Prenota valutazione implantare</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Pôle 2 : Estetica del Sorriso & Faccette -->
+        <article class="bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-xs hover:shadow-md transition-shadow flex flex-col">
+          <div class="h-48 overflow-hidden relative">
+            <img src="assets/aesthetic.jpg" alt="Estetica del sorriso e faccette dentali in ceramica" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-slate-900/80 backdrop-blur-xs text-white text-[11px] font-medium flex items-center gap-1.5">
+              <!-- SVG Sparkles -->
+              <svg class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+              </svg>
+              <span>Design Naturale</span>
+            </div>
+          </div>
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif-title text-xl font-bold text-slate-900 mb-2">Estetica &amp; Faccette</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                Armonia naturale su misura per valorizzare la vostra espressività. Faccette in ceramica feldspatica ultrasottili e sbiancamento medicale a luce fredda.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-700 mb-6">
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-sky-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>Simulazione digitale preliminare del sorriso</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-sky-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>Conservazione massima dello smalto naturale</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#prenota" class="inline-flex items-center gap-1.5 text-xs font-bold text-sky-700 hover:text-sky-800 transition-colors pt-4 border-t border-slate-100">
+              <span>Richiedi anteprima digitale estetica</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Pôle 3 : Odontoiatria Preventiva & Conservativa -->
+        <article class="bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-xs hover:shadow-md transition-shadow flex flex-col">
+          <div class="h-48 overflow-hidden relative">
+            <img src="assets/preventive.jpg" alt="Odontoiatria preventiva e cura per tutta la famiglia" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-slate-900/80 backdrop-blur-xs text-white text-[11px] font-medium flex items-center gap-1.5">
+              <!-- SVG Users / Family -->
+              <svg class="w-3.5 h-3.5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+              </svg>
+              <span>Famiglia &amp; Bambini</span>
+            </div>
+          </div>
+          <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif-title text-xl font-bold text-slate-900 mb-2">Prevenzione &amp; Conservativa</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                Cura quotidiana per tutta la famiglia, dalla pedodonzia all'igiene parodontale profonda guidata da microscopio operatore.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-700 mb-6">
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-sky-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>Igiene con tecnologia Air-Flow delicata</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-sky-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>Otturazioni estetiche invisibili in composito</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#prenota" class="inline-flex items-center gap-1.5 text-xs font-bold text-sky-700 hover:text-sky-800 transition-colors pt-4 border-t border-slate-100">
+              <span>Prenota seduta d'igiene</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGIE 3D & PLATEAU TECHNIQUE -->
+  <section id="tecnologia" class="bg-slate-900 text-white py-16 sm:py-24 relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        
+        <div>
+          <span class="text-xs font-bold tracking-widest uppercase text-sky-400">Innovazione Clinica a Chiaia</span>
+          <h2 class="font-serif-title text-3xl sm:text-4xl font-bold text-white mt-2 leading-tight">
+            La precisione digitale al servizio del vostro benessere.
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed mt-4 mb-8">
+            Nello Studio Mazzeo &amp; Silvestro abbiamo sostituito le tecniche invasive con l'eccellenza della digitalizzazione tridimensionale, per offrirvi comfort assoluto e risultati predicibili.
+          </p>
+
+          <div class="space-y-6">
+            <!-- Tech 1 -->
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-sky-950 border border-sky-800 flex items-center justify-center text-sky-400 shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-white text-sm">Scanner Intraorale Digitale 3D</h4>
+                <p class="text-slate-400 text-xs mt-1 leading-relaxed">Addio calchi in gesso e paste ingombranti: impronte ottiche in alta definizione in meno di 60 secondi.</p>
+              </div>
+            </div>
+
+            <!-- Tech 2 -->
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-sky-950 border border-sky-800 flex items-center justify-center text-sky-400 shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-white text-sm">TAC Cone Beam a Bassissima Radiazione</h4>
+                <p class="text-slate-400 text-xs mt-1 leading-relaxed">Radiologia volumetrica avanzata per analizzare osso e gengiva in 3D con un dosaggio radiogeno minimo.</p>
+              </div>
+            </div>
+
+            <!-- Tech 3 -->
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-sky-950 border border-sky-800 flex items-center justify-center text-sky-400 shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-white text-sm">Sedazione Cosciente con Medico Anestesista</h4>
+                <p class="text-slate-400 text-xs mt-1 leading-relaxed">Rilassamento totale mantenendo la piena lucidità: ideale per pazienti odontofobici o interventi lunghi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl">
+            <img src="assets/doctor.jpg" alt="Specialista dello Studio Mazzeo & Silvestro" class="w-full h-[450px] object-cover">
+          </div>
+          <!-- Badge encarté -->
+          <div class="absolute -bottom-6 -left-6 bg-slate-800 border border-slate-700 rounded-xl p-4 shadow-xl max-w-xs hidden sm:block">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              </div>
+              <div>
+                <div class="text-xs font-semibold text-white">Certificato Chiaia Medical</div>
+                <div class="text-[11px] text-slate-400">Oltre 20 anni di chirurgia orale</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION URGENZES DENTAIRES -->
+  <section id="urgenze" class="py-16 bg-amber-50/60 border-y border-amber-200/60">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="bg-white rounded-2xl p-6 sm:p-10 border border-amber-200 shadow-sm flex flex-col md:flex-row items-center justify-between gap-8">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-amber-500 text-white flex items-center justify-center shrink-0 shadow-sm">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
+          </div>
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-700">Canale Diretto Prioritario</span>
+            <h3 class="font-serif-title text-2xl font-bold text-slate-900 mt-1">Un fastidio o dolore improvviso?</h3>
+            <p class="text-slate-600 text-sm mt-1 max-w-xl leading-relaxed">
+              Gestiamo le urgenze in giornata con accesso diretto da mobile, senza attese al centralino telefonico. Scriveteci su WhatsApp o chiamate la linea diretta urgenze.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto shrink-0">
+          <a href="https://wa.me/393498124590?text=URGENZA%20DENTALE%3A%20Ho%20un%20dolore%20acuto%20e%20necessito%20di%20una%20visita%20urgente%20presso%20lo%20Studio." target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center gap-2 px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold shadow-xs transition-colors">
+            <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.087-.179.182-.077.357.101.174.449.741.964 1.2.662.589 1.221.77 1.394.856.173.087.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
+            <span>WhatsApp Urgenze</span>
+          </a>
+          <a href="tel:+390817648921" class="inline-flex justify-center items-center gap-2 px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold shadow-xs transition-colors">
+            <svg class="w-4 h-4 text-sky-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <span>Chiama 081 764 8921</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVIS PATIENTS GOOGLE (Social Proof 180+ avis) -->
+  <section id="recensioni" class="py-16 sm:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
+        <div>
+          <span class="text-xs font-bold tracking-widest uppercase text-sky-700">Fiducia &amp; Trasparenza</span>
+          <h2 class="font-serif-title text-3xl sm:text-4xl font-bold text-slate-900 mt-2">Cosa dicono i nostri pazienti</h2>
+        </div>
+        <div class="flex items-center gap-3 bg-white px-4 py-2.5 rounded-xl border border-slate-200">
+          <div class="text-amber-400 flex items-center">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="text-xs font-bold text-slate-800">4.8 / 5 su Google Maps (184 recensioni)</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Avis 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/90 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-3">
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="text-slate-700 text-xs sm:text-sm leading-relaxed italic">
+              « Avevo il terrore del dentista da oltre dieci anni. Il Dott. Mazzeo e l'équipe hanno eseguito un intervento di implantologia con sedazione cosciente: non ho avvertito il minimo dolore e il giorno dopo ero già al lavoro a Chiaia. »
+            </p>
+          </div>
+          <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-900">Avv. Roberto C.</span>
+            <span class="text-[11px] text-slate-600">Paziente Implantologia</span>
+          </div>
+        </div>
+
+        <!-- Avis 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/90 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-3">
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="text-slate-700 text-xs sm:text-sm leading-relaxed italic">
+              « Le faccette dentali realizzate dalla Dott.ssa Silvestro sono un'opera d'arte: nessuno nota che ho fatto un trattamento, tutti mi dicono quanto sia luminoso il mio sorriso. Lo scanner 3D iniziale è stato fantastico. »
+            </p>
+          </div>
+          <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-900">Chiara M.</span>
+            <span class="text-[11px] text-slate-600">Estetica &amp; Faccette</span>
+          </div>
+        </div>
+
+        <!-- Avis 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/90 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-3">
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="text-slate-700 text-xs sm:text-sm leading-relaxed italic">
+              « Pulizia impeccabile, orari precisi al minuto senza le solite ore di attesa in sala d'aspetto. Portiamo tutta la famiglia da anni e i bambini adorano il personale. »
+            </p>
+          </div>
+          <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-900">Ing. Marco T.</span>
+            <span class="text-[11px] text-slate-600">Cure di Famiglia</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULAIRE DE PRISE DE RENDEZ-VOUS EN LIGNE (Solution clé au problème du standard saturé) -->
+  <section id="prenota" class="py-16 sm:py-24 bg-white border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-xl mx-auto mb-10">
+        <span class="text-xs font-bold tracking-widest uppercase text-sky-700">Agenda Digitale Diretto</span>
+        <h2 class="font-serif-title text-3xl sm:text-4xl font-bold text-slate-900 mt-2">Prenota la tua prima visita</h2>
+        <p class="text-slate-600 text-sm mt-2">
+          Evitate le attese telefoniche. Compilate la richiesta in 60 secondi: la segreteria clinica confermerà via SMS/WhatsApp entro 2 ore lavorative.
+        </p>
+      </div>
+
+      <!-- Formulaire Card -->
+      <div class="bg-slate-50 border border-slate-200/90 rounded-2xl p-6 sm:p-10 shadow-sm">
+        <form onsubmit="event.preventDefault(); document.getElementById('confirmation-msg').classList.remove('hidden');" class="space-y-6">
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label for="prenota-nome" class="block text-xs font-semibold text-slate-700 mb-1.5">Nome e Cognome *</label>
+              <input type="text" id="prenota-nome" required placeholder="Es. Alessandro Moretti" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all">
+            </div>
+            <div>
+              <label for="prenota-telefono" class="block text-xs font-semibold text-slate-700 mb-1.5">Recapito Telefonico *</label>
+              <input type="tel" id="prenota-telefono" required placeholder="Es. +39 349 123 4567" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label for="prenota-trattamento" class="block text-xs font-semibold text-slate-700 mb-1.5">Area di interesse clinico</label>
+              <select id="prenota-trattamento" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all">
+                <option>Prima visita diagnostica &amp; Check-up</option>
+                <option>Implantologia guidata 3D</option>
+                <option>Estetica del sorriso &amp; Faccette</option>
+                <option>Sedazione cosciente / Cura ansia</option>
+                <option>Igiene dentale &amp; Prevenzione</option>
+                <option>Dolore o fastidio acuto</option>
+              </select>
+            </div>
+            <div>
+              <label for="prenota-orario" class="block text-xs font-semibold text-slate-700 mb-1.5">Fascia oraria preferita</label>
+              <select id="prenota-orario" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all">
+                <option>Mattina (08:30 – 13:00)</option>
+                <option>Pomeriggio (14:30 – 19:30)</option>
+                <option>Nessuna preferenza (prima disponibilità)</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="prenota-note" class="block text-xs font-semibold text-slate-700 mb-1.5">Note o eventuali esigenze particolari (facoltativo)</label>
+            <textarea id="prenota-note" rows="3" placeholder="Descrivete brevemente le vostre necessità o se gradite il protocollo di sedazione cosciente..." class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all"></textarea>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <input type="checkbox" id="privacy" required class="mt-1 h-4 w-4 rounded border-slate-300 text-sky-600 focus:ring-sky-500">
+            <label for="privacy" class="text-xs text-slate-500 leading-relaxed">
+              Dichiaro di aver preso visione dell'informativa privacy (D.Lgs. 196/2003 e GDPR UE 2016/679) per il trattamento dei dati ai fini della prenotazione medica.
+            </label>
+          </div>
+
+          <button type="submit" class="w-full py-4 rounded-xl bg-slate-900 hover:bg-sky-900 text-white font-bold text-sm shadow-md transition-colors flex items-center justify-center gap-2">
+            <!-- SVG Send -->
+            <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+            <span>Invia Richiesta di Appuntamento</span>
+          </button>
+
+          <!-- Notification de confirmation simulée -->
+          <div id="confirmation-msg" class="hidden p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs flex items-center gap-3">
+            <svg class="w-5 h-5 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+            <div>
+              <strong>Richiesta registrata con successo!</strong> La segreteria dello Studio Mazzeo &amp; Silvestro vi contatterà al numero indicato entro due ore lavorative per confermare l'orario.
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ACCÈS & LOCALISATION (Riviera di Chiaia, Napoli) -->
+  <section id="studio" class="py-16 bg-slate-100/70 border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        
+        <div>
+          <span class="text-xs font-bold tracking-widest uppercase text-sky-700">Nel Cuore di Chiaia</span>
+          <h2 class="font-serif-title text-3xl font-bold text-slate-900 mt-2 mb-4">Uno studio elegante, riservato e facile da raggiungere.</h2>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">
+            Situato nel quartiere Chiaia, a pochi passi dal lungomare e dai principali collegamenti urbani, lo studio garantisce massima riservatezza e comodi parcheggi convenzionati nelle vicinanze.
+          </p>
+
+          <div class="space-y-4 text-sm text-slate-700">
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sky-700 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <div>
+                <strong>Indirizzo :</strong> Riviera di Chiaia, 118 – 80122 Napoli (NA)
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sky-700 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              <div>
+                <strong>Telefono Segreteria :</strong> 081 764 8921
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sky-700 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <div>
+                <strong>Email :</strong> segreteria@mazzeosilvestro.it
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200/90 shadow-sm">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">Come Raggiungerci &amp; Parcheggi</h4>
+          <div class="space-y-3 text-xs text-slate-600 mb-6">
+            <p>• <strong>Metro Linea 2 :</strong> Fermata Piazza Amedeo (5 minuti a piedi).</p>
+            <p>• <strong>Funicolare Chiaia :</strong> Fermata Parco Margherita.</p>
+            <p>• <strong>In Auto / Parcheggio :</strong> Garage convenzionato a 80 metri in Via San Pasquale.</p>
+          </div>
+          <a href="https://maps.google.com/?q=Riviera+di+Chiaia+Napoli" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 w-full py-3 rounded-xl border border-slate-300 hover:bg-slate-50 text-slate-700 font-semibold text-xs transition-colors">
+            <svg class="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            <span>Apri Itinerario su Google Maps</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800 text-xs">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-sky-400">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.5 2 6 4.5 6 7.5C6 9.5 7 11 7.5 12.5C8 14 8 16 7.5 18C7 20 8.5 22 10 22C11.5 22 11.8 19 12 17C12.2 19 12.5 22 14 22C15.5 22 17 20 16.5 18C16 16 16 14 16.5 12.5C17 11 18 9.5 18 7.5C18 4.5 15.5 2 12 2Z"/></svg>
+        </div>
+        <div>
+          <div class="text-white font-bold text-sm">Studio Odontoiatrico Mazzeo &amp; Silvestro</div>
+          <div class="text-[11px] text-slate-500">Iscrizione Ordine dei Medici Chirurghi e Odontoiatri di Napoli • P.IVA 08419230632</div>
+        </div>
+      </div>
+
+      <div class="text-center md:text-right text-slate-500 text-[11px]">
+        <div>Direttore Sanitario: Dott. Gennaro Mazzeo</div>
+        <div class="mt-1">Proposta di maquette digitale sviluppata su misura da <strong>Codafree</strong>.</div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- BARRE D'ACTION MOBILE STICKY (Conversion 80% mobile au pouce - ZÉRO EMOJI) -->
+  <div class="fixed bottom-0 inset-x-0 bg-white/95 backdrop-blur-md border-t border-slate-200 px-4 py-3 flex sm:hidden justify-between items-center z-50 shadow-lg">
+    <a href="tel:+390817648921" class="flex flex-col items-center justify-center text-slate-700 hover:text-sky-700 text-[10px] font-semibold">
+      <svg class="w-5 h-5 text-sky-700 mb-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+      <span>Chiama</span>
+    </a>
+
+    <a href="https://wa.me/393498124590?text=Buongiorno%20Studio%20Mazzeo%20e%20Silvestro%2C%20vorrei%20informazioni%20su..." target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center text-emerald-700 text-[10px] font-semibold">
+      <svg class="w-5 h-5 text-emerald-600 mb-0.5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.087-.179.182-.077.357.101.174.449.741.964 1.2.662.589 1.221.77 1.394.856.173.087.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+
+    <a href="#prenota" class="px-5 py-2.5 rounded-xl bg-slate-900 text-white text-xs font-bold shadow-md flex items-center gap-1.5">
+      <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+      <span>Prenota Visita</span>
+    </a>
+  </div>
+
+</body>
+</html>
